@@ -93,7 +93,7 @@ namespace ChallengesWithTestsMark8
             {
                 return false;
             }
-            if (input.StartsWith('-') || input.Contains('.') && input.Any(char.IsDigit))
+            if (input.StartsWith('-') || input.Contains('.') && input.Any(char.IsDigit)) // check startswith
             {
                 return true;
             }
@@ -166,7 +166,7 @@ namespace ChallengesWithTestsMark8
                 num = num * number;
                 number = number - 1;
             }
-            return num;
+            return num; // has to be in namespace otherwise red squiggles will turn up 
         }
     }
 }
